@@ -1,0 +1,69 @@
+<header id="header" role="banner" aria-label="{{ 'Site header'|t}}"><div class="section clearfix">
+    
+    {#
+    <h1>hola Mundo</h1>
+    <div class="site-branding__text">
+      
+        <div class="site-branding__name">
+          <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
+        </div>
+      
+        <div class="site-branding__slogan">{{ site_slogan }}</div>
+      
+    </div>
+    
+    <ol>
+      {% for key, value in _context  %}
+        <li>{{ key }}</li>
+      {% endfor %}
+    </ol>
+    #}
+    
+    {{ page.header }}
+
+  </div></header>
+  <!-- // header -->
+
+<aside class="main-sidebar">
+  {% if logo %}
+    <a class="logo" href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
+      <img src="{{ logo }}" alt="{{ 'Home'|t }}"/>
+    </a>
+  {% endif %}
+
+  {{ page.sidebar }}
+</aside>
+
+<div class="main-content">
+
+  {{ messages }}
+
+  {{ page.help }}
+
+  <main role="main">
+
+    <div class="layout-content">
+      {{ page.highlighted }}
+
+      {{ title_prefix }}
+      {% if title %}
+        <h1 id="tituloooo">{{ title }}</h1>
+      {% endif %}
+      {{ title_suffix }}
+
+      {{ tabs }}
+
+      {% if action_links %}
+        <nav class="action-links">{{ action_links }}</nav>
+      {% endif %}
+
+      {{ page.content }}
+    </div>{# /.layout-content #}
+  </main>
+</div>
+
+{% if page.footer %}
+  <footer role="contentinfo">
+    {{ page.footer }}
+  </footer>
+{% endif %}

@@ -1,0 +1,19 @@
+name: Mokte theme Development
+type: theme
+description: Basic Drupal 8 Theme
+version: 0.1
+core: 8.x
+engine: twig
+
+libraries:
+  - mokte/global-styling
+
+# Remove a CSS file:
+stylesheets-remove:
+  - normalize.css
+
+regions:
+  header: 'Header'
+  sidebar: 'Sidebar'
+  content: 'Main Content'
+  footer: 'Footer'
