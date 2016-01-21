@@ -6,6 +6,6 @@ Simple and clean theme for drupal 8.
 - options to change the background
 
 # How to configure
-for now have to be configured by hand, see how at: [robls.com/mokte-howto][guide]
+Have to be configured by hand, see how: [robls.com/mokte-howto][guide]
 
-[guide]: <http://robls.com/mokte-how>
+[guide]: <http://robls.com/mokte-howto>
